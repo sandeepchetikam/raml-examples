@@ -7,11 +7,11 @@ types:
     properties:
       kind: string # contains name of the kind of a `Person` instance
       name: string
-  Employee: # kind may equal to `Employee`
+  Employee: # kind may equal to `Employee; default value for `discriminatorValue`
     type: Person
     properties:
       employeeId: string
-  User: # kind may equal to `User`
+  User: # kind may equal to `User`; default value for `discriminatorValue`
     type: Person
     properties:
       userId: string
