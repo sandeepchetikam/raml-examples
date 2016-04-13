@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: Test API
+
+types:
+  Person:
+    properties:
+      name: string
+
+/person:
+  put:
+    body:
+      application/json:
+        type: Person
+        example: 
+          name: Federico

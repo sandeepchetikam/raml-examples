@@ -1,6 +1,5 @@
 {
   "title": "Person Schema",
-  "id": "",
   "type": "object",
   "properties": {
     "firstName": {
