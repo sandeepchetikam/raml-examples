@@ -1,14 +1,12 @@
 #%RAML 1.0
-
-title: Testing annotations
+title: Illustrating annotations
 mediaType: application/json
-
 annotationTypes:
   experimental:
   feedbackRequested:
-  assertion:
   testHarness:
-  badge:
+    type: string # This line may be omitted as it's the default type
+  badge:         # This annotation type, too, allows string values
   clearanceLevel:
     properties:
       level:
@@ -17,7 +15,6 @@ annotationTypes:
       signature:
         pattern: "\\d{3}-\\w{12}"
         required: true
-
 /groups:
   (experimental):
   (feedbackRequested):
@@ -32,4 +29,3 @@ annotationTypes:
     (feedbackRequested):
     responses:
       200:
-        (assertion): Condition 1
