@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+
+types:
+  Email: # normal object type declaration
+    type: object
+    properties:
+      name:
+        type: string
+  EmailsLong: # array type declaration
+    type: array
+    items: Email
+    minItems: 1
+    uniqueItems: true
+  EmailsShort: # array type declaration using type expression shortcut
+    type: Email[] # '[]' expresses an array
+    minItems: 1
+    uniqueItems: true
