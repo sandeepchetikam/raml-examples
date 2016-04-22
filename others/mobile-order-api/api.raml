@@ -2,10 +2,9 @@
 title: Mobile Order API
 version: 1.0
 baseUri: http://localhost:8081/api
-description: Mobile Order API for the mobile commerce application
 
 uses:
-  assets: !include assets-lib.raml
+  assets:  assets-lib.raml
 
 /orders:
   displayName: Orders
@@ -37,7 +36,7 @@ uses:
                       -
                         product_id: "PRODUCT-2"
                         quantity: 2
-                multiple-orders:
+              multiple-orders:
                   orders:
                     -
                       order_id: "ORDER-437563756"
