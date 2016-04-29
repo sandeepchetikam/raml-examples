@@ -40,3 +40,20 @@ types:
         body:
           application/json:
             type: Org # reference to global type definition
+            example:
+              onCall:
+                firstname: nico
+                lastname: ark
+                kind: admin
+                clearanceLevel: low
+                phone: "12321"
+              Head:
+                firstname: nico
+                lastname: ark
+                kind: manager
+                reports:
+                  -
+                    firstname: nico
+                    lastname: ark
+                    kind: admin
+                phone: "123-23"
