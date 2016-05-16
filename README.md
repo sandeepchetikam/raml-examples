@@ -1,4 +1,4 @@
-Current RAML Versions: RAML 1.0 RC2
+Current RAML Versions: RAML 1.0
 
 # RAML Examples
 
