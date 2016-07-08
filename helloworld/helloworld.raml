@@ -1,5 +1,7 @@
 #%RAML 1.0
 title: Hello world # required title
+types:
+  Dog: !include bla.raml
 
 /helloworld: # optional resource
   get: # HTTP method declaration
